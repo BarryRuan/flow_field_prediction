@@ -11,7 +11,8 @@ python3 data_process.py
 to first  process raw data stored in HS/ and LS/.
 
 2. Use 
-```python3 training_data_process.py --input_size=9
+```
+python3 training_data_process.py --input_size=9
 ```
 to transfer datain data/velocity, data/magnitude, data/direction to corresponding training 
 data sequenced by time.
