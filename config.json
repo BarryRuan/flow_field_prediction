@@ -1,0 +1,35 @@
+{
+    "velocity_path": "data/velocity",
+    "time_velocity_path": "data/time_velocity",
+    "compressed_time_velocity_path": "data/compressed_time_velocity",
+    "direction_path": "data/direction",
+    "time_direction_path": "data/time_direction",
+    "compressed_time_direction_path": "data/compressed_time_direction",
+    "magnitude_path": "data/magnitude",
+    "time_magnitude_path": "data/time_magnitude",
+    "compressed_time_magnitude_path": "data/compressed_time_magnitude",
+    "image_dim": 25,
+    "birnn": {
+        "velocity_checkpoint": "./checkpoints/birnn/velocity",
+        "direction_checkpoint": "./checkpoints/birnn/direction",
+        "magnitude_checkpoint": "./checkpoints/birnn/magnitude",
+        "learning_rate": 1e-4,
+        "num_steps": 20000,
+	"seq_len":9,
+        "batch_size": 100,
+        "output_dim": 2,
+	"state_size": 128 
+    },
+
+    "rnn": {
+        "velocity_checkpoint": "./checkpoints/rnn/velocity",
+        "direction_checkpoint": "./checkpoints/rnn/direction",
+        "magnitude_checkpoint": "./checkpoints/rnn/magnitude",
+        "learning_rate": 1e-4,
+        "num_steps": 20000,
+	"seq_len":9,
+        "batch_size": 100,
+        "output_dim": 2,
+	"state_size": 128 
+    }
+}
